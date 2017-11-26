@@ -4,17 +4,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+            <div class="container">
+                <div class="row">Panel de control</div>
 
-                <div class="panel-body">
+                <div class="row">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    You are logged in!
+                    Bienvenido a tu panel de control!
                 </div>
             </div>
         </div>
