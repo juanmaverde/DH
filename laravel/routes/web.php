@@ -15,6 +15,10 @@ Route::get('/', 'PagesController@home');
 
 Route::get('/about', 'PagesController@about');
 
+Route::get('/procedures', 'PagesController@procedures');
+
+Route::get('/dashboard', 'PagesController@dashboard');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
