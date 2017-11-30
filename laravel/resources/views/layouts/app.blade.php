@@ -83,9 +83,10 @@
       <!-- jQuery first, then Tether, then Bootstrap JS. -->
       <script src="{{ asset('js/jquery-slim.min.js') }}"></script>
       <script src="{{ asset('js/tether.min.js') }}"></script>
+      <script src="{{ asset('js/popper.min.js') }}"></script>
       <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-       
       <script src="{{ asset('js/app.js') }}"></script>
+       
 
    </body>
 </html>
