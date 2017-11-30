@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="container">
-                <div class="form-group">Registro</div>
+                <div class="form-group">Registro de usuario</div>
 
                 <div class="container">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">

@@ -12,8 +12,7 @@ class PagesController extends Controller
       $links = [
          'http://m3d.solutions' => 'm3d.solutions',
          'http://m3d.doctor' => 'm3d.doctor',
-         'http://m3d.website' => 'm3d.website',
-         '/procedures' => 'sus casos'
+         'http://m3d.website' => 'm3d.website'
       ];
       return view('welcome', [
       'links' => $links,
@@ -34,5 +33,9 @@ class PagesController extends Controller
    public function dashboard()
    {
       return view('dashboard');
+   }
+   public function notifications()
+   {
+      return view('notifications');
    }
 }

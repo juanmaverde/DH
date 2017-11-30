@@ -82,7 +82,7 @@
                   <td><a href=""> {{ $procedure->procedure_date }} </a></td>
                   <td><a href=""> {{ $procedure->patient_status }} </a></td>
                   <td><a href=""> {{ $procedure->case_status }} </a></td>
-                  <td><small><a href=""><em>detalles</em></a></small></td>
+                  <td><small><a href="/procedures/{{ $procedure->id }}"><em>detalles</em></a></small></td>
                </tr>
                @endforeach
             </tbody>

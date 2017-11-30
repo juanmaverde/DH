@@ -19,6 +19,10 @@ Route::get('/procedures', 'PagesController@procedures');
 
 Route::get('/dashboard', 'PagesController@dashboard');
 
+Route::get('/notifications', 'PagesController@notifications');
+
+Route::get('/procedures/{procedure}','ProceduresController@view');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
