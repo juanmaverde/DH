@@ -15,8 +15,7 @@
       <link rel="icon" href="{{ asset('m3d_favicon.ico') }}">
 
       <!-- Styles -->
-      {{-- Bootstrap 4 // CDN --}}
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">
    </head>
 
@@ -25,21 +24,12 @@
          <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                <div class="navbar-header">
-
-                  <!-- Collapsed Hamburger -->
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                     <span class="sr-only">Navegación</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                  </button>
-
+               <!-- Collapsed Hamburger -->
                   <!-- Branding Image -->
                   <a class="navbar-brand" href="{{ url('/') }}">
                            {{ config('app.name', 'M3D.solutions') }}
                   </a>
                </div>
-
                <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                   <ul class="nav navbar-nav">
@@ -47,7 +37,7 @@
                   </ul>
 
                   <!-- Right Side Of Navbar -->
-                  <ul class="nav nav-pills navbar-right">
+                  <ul class="nav">
                      <!-- Authentication Links -->
                      @guest
                         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Acceso</a></li>
@@ -77,6 +67,7 @@
                </div>
             </div>
          </nav>
+      </div>
 
          <div class="container">
             @yield('content')
@@ -89,10 +80,12 @@
       </div>
 
        <!-- Scripts -->
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="{{ asset('js/jquery-slim.min.js') }}"></script>
+      <script src="{{ asset('js/tether.min.js') }}"></script>
+      <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+       
       <script src="{{ asset('js/app.js') }}"></script>
-      {{-- JQUERY --}}
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
    </body>
 </html>

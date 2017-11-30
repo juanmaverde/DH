@@ -5,39 +5,54 @@
          <h1>M3D.solutions</h1>
       </div>
       <div class="container">
-         <img class="img-fluid" src="http://via.placeholder.com/2000x150" alt="placeholder">
+         <div class="row">
+            <div class="col">
+               <img class="mx-auto d-block" src="http://via.placeholder.com/900x350" alt="placeholder">
+            </div>
+         </div>
+      </div>
+      <hr>
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <img class="mx-auto d-block" src="http://via.placeholder.com/900x250" alt="placeholder">
+            </div>
+         </div>
       </div>
 @endsection
 
 @section('footer')
+<hr>
    <div class="container">
-      <div class="footer text-right">
-         <hr>
-         <div class="col-md-4">
-            @foreach ($links as $link => $text)
-               {{-- <li class="nav-item"> --}}
-                  <a class="nav-link text-center" href="{{ $link }}"> {{ $text }}</a>
-               {{-- </li> --}}
-            @endforeach
+      <div class="row">
+         <div class="col-4">
+            <div class="list-group">
+               <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success  list group item</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning  list group item</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list  group item</a>
+            </div>
          </div>
-         <div class="col-md-4">
-            @foreach ($links as $link => $text)
-               {{-- <li class="nav-item"> --}}
-                  <a class="nav-link text-center" href="{{ $link }}"> {{ $text }}</a>
-               {{-- </li> --}}
-            @endforeach
+         <div class="col-4">
+            <div class="list-group">
+               <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success  list group item</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning  list group item</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list  group item</a>
+            </div>
          </div>
-         <div class="col-md-4">
-            @foreach ($links as $link => $text)
-               {{-- <li class="nav-item"> --}}
-                  <a class="nav-link text-center" href="{{ $link }}"> {{ $text }}</a>
-               {{-- </li> --}}
-            @endforeach
+         <div class="col-4">
+            <div class="list-group">
+               <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success  list group item</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning  list group item</a>
+               <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list  group item</a>
+            </div>
          </div>
       </div>
    </div>
    <hr>
    <div class="col-md-12">
-      <p class="text-center">M3D.solutions - todos los derechos reservados</p>
+      <p class="text-center text-muted">M3D.solutions - todos los derechos reservados</p>
    </div>
 @endsection
